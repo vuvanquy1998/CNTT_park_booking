@@ -1,0 +1,526 @@
+@import 'colors';
+
+/*Header*/
+
+.navbar-inverse {
+  border-radius: 0;
+}
+
+.user_img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 6px
+}
+
+.login_tag {
+  margin-right: 7px
+}
+
+.add_park_btn {
+  margin-top: 8px;
+}
+
+.dropdown_profile {
+  margin-left: 20px;
+}
+
+/*flash*/
+.alert-error {
+  background-color: $white91;
+  border-color: $white88;
+  color: $white50;
+  text-align: left;
+}
+
+.alert-alert {
+  background-color: $white91;
+  border-color: $white88;
+  color: $white50;
+  text-align: left;
+}
+
+.alert-success {
+  background-color: $green89;
+  border-color: $green85;
+  color: $green40;
+  text-align: left;
+}
+
+.alert-notice {
+  background-color: $green89;
+  border-color: $green85;
+  color: $green40;
+  text-align: left;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+/*login*/
+.form-control {
+  background: white;
+  box-shadow: none !important;
+  border-color: $gray89;
+}
+
+.form-control:focus {
+  border-color: $blue61;
+}
+
+.form-control, .btn {
+  border-radius: 2px;
+}
+
+.login-form {
+  margin-top: 100px;
+}
+
+.login-form form {
+  color: $gray48;
+  border-radius: 2px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  background: $gray93;
+  box-shadow: 0px 2px 2px $black0_3;
+  padding: 30px;
+  position: relative;
+}
+
+.login-form h2 {
+  font-size: 22px;
+  margin: 35px 0 25px;
+}
+
+.login-form .avatar {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: -50px;
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  z-index: 9;
+  background: $blue61;
+  padding: 15px;
+  box-shadow: 0px 2px 2px $black0_1;
+}
+
+.login-form .avatar img {
+  width: 100%;
+}
+
+.login-form input[type="checkbox"] {
+  margin-top: 2px;
+}
+
+.login-form .btn {
+  font-size: 16px;
+  font-weight: bold;
+  background: $blue61;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.login-form .btn:hover, .login-form .btn:focus {
+  background: $blue52;
+  outline: none !important;
+}
+
+.login-form a {
+  color: white;
+  text-decoration: underline;
+}
+
+.login-form a:hover {
+  text-decoration: none;
+}
+
+.login-form form a {
+  color: $gray48;
+  text-decoration: none;
+}
+
+.login-form form a:hover {
+  text-decoration: underline;
+}
+
+.btn-google {
+  background: $tomato !important;
+  text-decoration: none !important;
+  color: white !important;
+}
+
+/*sign_up*/
+
+.signup-form {
+  margin-top: 50px;
+}
+
+.input-group-addon {
+  border-color: $gray88;
+}
+
+.signup-form form {
+  color: $gray48;
+  border-radius: 2px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  background: $gray93;
+  box-shadow: 0px 2px 2px $black0_3;
+  padding: 30px;
+}
+
+.signup-form h2 {
+  color: $gray20;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.signup-form hr {
+  margin: 0 -30px 20px;
+}
+
+.signup-form .form-group {
+  margin-bottom: 20px;
+}
+
+.signup-form .input-group-addon {
+  max-width: 42px;
+  text-align: center;
+}
+
+.signup-form .btn{
+  font-size: 16px;
+  font-weight: bold;
+  background: $blue38;
+  border: none;
+  min-width: 140px;
+}
+
+.signup-form .btn:hover, .signup-form .btn:focus {
+  background: $blue35;
+  outline: none;
+}
+
+.signup-form .fa-check {
+  color: white;
+  left: 16px;
+  top: 17px;
+  font-size: 7px;
+  position: absolute;
+}
+
+/*forgot_pw*/
+
+.forgot_pw-form {
+  margin-top: 100px;
+}
+
+.forgot_pw-form h2 {
+  color: $gray20;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.forgot_pw-form .btn{
+  font-size: 16px;
+  font-weight: bold;
+  background: $blue38;
+  border: none;
+}
+
+.forgot_pw-form .btn:hover, .forgot_pw-form .btn:focus {
+  background: $blue35;
+  outline: none;
+}
+
+/*change_pw*/
+
+.change_pw-form {
+  margin-top: 100px;
+}
+
+.separator {
+  border-right: 1px solid $gray88;
+}
+
+.box-pw {
+  margin-top: 80px;
+}
+
+.change_pw-form .btn {
+  font-size: 16px;
+  font-weight: bold;
+  background: $blue38;
+  border: none;
+}
+
+.change_pw-form .btn:hover, .change_pw-form .btn:focus {
+  background: $blue35;
+  outline: none;
+}
+
+.btn-cancel {
+  margin-left: 3%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#map {
+  width: 800px;
+  height: 400px;
+}
+
+/* search */
+
+.scrollable-menu {
+  height: auto;
+  max-height: 500px;
+  overflow-x: hidden;
+}
+
+li.search-item {
+  height: 75px;
+  margin: 10px;
+  &:hover {
+    background-color: $white94;
+    cursor:pointer;
+  }
+  a:link {
+   color:inherit;
+  }
+}
+
+#livesearch {
+  a {
+    color: $gray45;
+  }
+}
+
+.search-form {
+  display: table;
+  float: right;
+  margin-right: 20px;
+  width: 400px;
+  background-color: white;
+  padding: 0;
+  .form-group {
+    display: table-cell;
+    width: 100%;
+    .form-control {
+      width: 100%;
+    }
+  }
+  button {
+    display: table-cell;
+    width: 70px;
+  }
+}
+
+.dropdown-menu {
+  padding: 0;
+  border: none;
+  width: 100%;
+}
+
+#map_show {
+  width: 600px;
+  height: 400px;
+  margin-top: 20px;
+}
+
+#detail_park {
+  margin-left: 70px;
+  margin-bottom: 50px;
+  h2 {
+    font-style: italic;
+    color: $tomato;
+  }
+  h3 {
+    color: $blue52;
+  }
+  .btn-edit-park {
+    margin-right: 15px;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+#latitude, #longitude {
+  display: none;
+}
+
+/* social-button-share */
+
+.social-share-button .ssb-icon {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: 44px 46px !important;
+  display: inline-block !important;
+  height: 30px !important;
+  width: 40px !important;
+}
+.social-share-button {
+  right: 1px;
+  top: 0px;
+}
+
+/*Profile_user*/
+
+.profile_img {
+  width: 240px !important;
+  height: 160px !important;
+}
+
+.profile-img{
+  text-align: center;
+}
+
+.profile-img img{
+  width: 70%;
+  height: 100%;
+}
+
+.profile-img .file {
+  position: relative;
+  overflow: hidden;
+  margin-top: -20%;
+  width: 70%;
+  border: none;
+  border-radius: 0;
+  font-size: 15px;
+  background: $black15;
+}
+
+.profile-img .file input {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+
+.profile-head h5{
+  color: $gray20;
+}
+
+.profile-edit-btn{
+  border: none;
+  border-radius: 1.5rem;
+  width: 70%;
+  padding: 6% 8%;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  background-color: $tomato;
+  cursor: pointer;
+}
+
+.profile-edit-btn:hover, .profile-edit-btn:focus {
+  text-decoration: none;
+  color: white;
+}
+
+.proile-rating{
+  font-size: 12px;
+  color: $gray51;
+  margin-top: 5%;
+}
+
+.proile-rating span{
+  color: $gray31;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.profile-head .nav-tabs{
+  margin-bottom:5%;
+}
+
+.profile-head .nav-tabs .nav-link{
+  font-weight:600;
+  border: none;
+}
+
+.profile-head .nav-tabs .nav-link.active{
+  border: none;
+  border-bottom:2px solid $blue40;
+}
+
+.profile-work{
+  padding: 14%;
+  margin-top: -15%;
+}
+
+.profile-work p{
+  font-size: 12px;
+  color: $gray51;
+  font-weight: 600;
+  margin-top: 10%;
+}
+
+.profile-work a{
+  text-decoration: none;
+  color: $gray31;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.profile-work ul{
+  list-style: none;
+}
+
+.profile-tab label{
+  font-weight: 600;
+}
+
+.profile-tab p{
+  font-weight: 600;
+  color: $blue40;
+}
+
+#edit_user {
+  .btn_cancel {
+    margin-left: 3%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.current_img {
+  position: relative;
+  top: -25px;
+  right: -110px;
+  font-weight: 100;
+}
+
+/*Order_new*/
+
+#date_booked, #year_booked, #now_year, #next_year {
+  display: none;
+}
+
+.require_fill {
+  color: red;
+}
+
+/*Order_index*/
+
+.status_order {
+  display: none;
+}

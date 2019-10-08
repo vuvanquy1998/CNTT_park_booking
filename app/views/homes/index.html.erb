@@ -1,0 +1,7 @@
+<%= form_for @place do |f| %>
+  <%= f.text_field :latitude, class: "form-control", id: "latitude" %>
+  <%= f.text_field :longitude, class: "form-control", id: "longitude" %>
+  <%= f.submit t("places.find_near_park"), class: "btn btn-info" %>
+<% end %>
+
+<%= javascript_include_tag "geolocation", "data-turbolinks-track": "reload" %>
