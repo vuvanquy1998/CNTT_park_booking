@@ -1,5 +1,5 @@
-name_max: 40
-email_max: 30
+name_max: 80
+email_max: 50
 phone_max: 15
 total_position_min: 1
 price_min: 1
