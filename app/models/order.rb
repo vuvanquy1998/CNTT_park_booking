@@ -8,5 +8,5 @@ class Order < ApplicationRecord
   validates :price, presence: true, numericality: {greater_than: Settings.price_min}
   scope :find_order, ->(id, type) {where orderable_id: id, orderable_type: type}
   scope :find_status, ->(status) {where status: status}
-  scope :order_by_time, -> {order created_at: :desc}
+  scope :order_by_status, ->{order status: :asc}
 end
